@@ -59,7 +59,7 @@ Runtimes, language ports, servers, MCP connectors, and apps. {n_items} repositor
 [![Sources Verified](https://img.shields.io/badge/CI-Sources%20Verified-brightgreen)](scripts/verify_sources.py)
 [![Repos](https://img.shields.io/badge/repos-{n_items}-blue)](https://github.com/NandhaKishorM/laya)
 [![Languages](https://img.shields.io/badge/languages-{len(langs)}-violet)](#-language-runtimes--ports)
-[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-CC--BY--4.0-lightgrey.svg)](LICENSE)
 
 > ⛔ **Not affiliated with Laya, ConvAI Innovations, or any project listed.** Star counts are a live snapshot ({d['updated']}).
 
