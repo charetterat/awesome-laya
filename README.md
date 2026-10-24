@@ -11,7 +11,7 @@ Runtimes, language ports, servers, MCP connectors, and apps. 29 repositories acr
 [![Languages](https://img.shields.io/badge/languages-11-violet)](#-language-runtimes--ports)
 [![License](https://img.shields.io/badge/license-CC--BY--4.0-lightgrey.svg)](LICENSE)
 
-> ⛔ **Not affiliated with Laya, ConvAI Innovations, or any project listed.** Star counts are a live snapshot (2026-10-19).
+> ⛔ **Not affiliated with Laya, ConvAI Innovations, or any project listed.** Star counts are a live snapshot (2026-10-24).
 
 </div>
 
