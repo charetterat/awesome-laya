@@ -1,520 +1,520 @@
 {
- "_comment": "Single source of truth for awesome-laya. Star counts verified live across the 19001 HK proxy on 2026-10-11. One row per real, public, independently-usable repository in the Laya decision-model ecosystem.",
- "updated": "2026-10-25",
- "model": {
-  "name": "Laya",
-  "repo": "NandhaKishorM/laya",
-  "homepage": "https://huggingface.co/convaiinnovations/laya",
-  "what": "A non-autoregressive System 1 decision engine. Instead of generating text, it returns a typed decision — choice, score, or yes/no — over any input in a single forward pass, in 100+ languages."
- },
- "layers": [
-  {
-   "layer_name": "Core Engine",
-   "icon": "🧠",
-   "description": "The model itself. Non-autoregressive System 1 decision engine — typed choice / score / yes-no over any text in a single forward pass, 100+ languages.",
-   "items": [
+  "_comment": "Single source of truth for awesome-laya. Star counts verified live across the 19001 HK proxy on 2026-10-11. One row per real, public, independently-usable repository in the Laya decision-model ecosystem.",
+  "updated": "2026-10-27",
+  "model": {
+    "name": "Laya",
+    "repo": "NandhaKishorM/laya",
+    "homepage": "https://huggingface.co/convaiinnovations/laya",
+    "what": "A non-autoregressive System 1 decision engine. Instead of generating text, it returns a typed decision — choice, score, or yes/no — over any input in a single forward pass, in 100+ languages."
+  },
+  "layers": [
     {
-     "name": "laya",
-     "repo": "NandhaKishorM/laya",
-     "url": "https://github.com/NandhaKishorM/laya",
-     "stars": 32160,
-     "language": "Python",
-     "license": "Apache-2.0",
-     "role": "Core",
-     "what": "The reference implementation. One forward pass returns a typed decision (choice, score, or yes/no) instead of generated text, plus a router that picks the right checkpoint per request.",
-     "key_capabilities": "100+ languages · router-selected checkpoints · calibration-aware · Apache-2.0"
+      "layer_name": "Core Engine",
+      "icon": "🧠",
+      "description": "The model itself. Non-autoregressive System 1 decision engine — typed choice / score / yes-no over any text in a single forward pass, 100+ languages.",
+      "items": [
+        {
+          "name": "laya",
+          "repo": "NandhaKishorM/laya",
+          "url": "https://github.com/NandhaKishorM/laya",
+          "stars": 32160,
+          "language": "Python",
+          "license": "Apache-2.0",
+          "role": "Core",
+          "what": "The reference implementation. One forward pass returns a typed decision (choice, score, or yes/no) instead of generated text, plus a router that picks the right checkpoint per request.",
+          "key_capabilities": "100+ languages · router-selected checkpoints · calibration-aware · Apache-2.0"
+        }
+      ]
+    },
+    {
+      "layer_name": "Language Runtimes & Ports",
+      "icon": "⚙️",
+      "description": "Run Laya on your stack — no Python service required. Ports and native runtimes across 10 languages and accelerators.",
+      "items": [
+        {
+          "name": "laya-mlx",
+          "repo": "mizorewww/laya-mlx",
+          "url": "https://github.com/mizorewww/laya-mlx",
+          "stars": 6864,
+          "language": "Python",
+          "license": "Apache-2.0",
+          "role": "Runtime · Apple MLX",
+          "what": "Native MLX runtime. 7–14 ms short decisions on an M3 Max, with no text generation, no PyTorch, and no cloud API.",
+          "key_capabilities": "Apple MLX · 7–14 ms · fully local"
+        },
+        {
+          "name": "laya-coreml",
+          "repo": "mizorewww/laya-coreml",
+          "url": "https://github.com/mizorewww/laya-coreml",
+          "stars": 1571,
+          "language": "Python",
+          "license": "Apache-2.0",
+          "role": "Runtime · Apple Core ML",
+          "what": "Runs typed decisions on Core ML and the Neural Engine. ~5 ms short decisions on M3 Max, with reproducible speed and energy benchmarks.",
+          "key_capabilities": "Core ML · Neural Engine · ~5 ms"
+        },
+        {
+          "name": "laya.cpp",
+          "repo": "lkarlslund/laya.cpp",
+          "url": "https://github.com/lkarlslund/laya.cpp",
+          "stars": 123,
+          "language": "C++",
+          "license": "MIT",
+          "role": "Runtime · C++",
+          "what": "C++ inference for Laya typed decisions, with CUDA, Vulkan, Core ML, and CPU backends.",
+          "key_capabilities": "CUDA · Vulkan · Core ML · CPU"
+        },
+        {
+          "name": "laya",
+          "repo": "receptron/laya",
+          "url": "https://github.com/receptron/laya",
+          "stars": 880,
+          "language": "TypeScript",
+          "license": "MIT",
+          "role": "Runtime · TypeScript / Node.js",
+          "what": "Run the open-source Jev-compatible Laya model from Node.js and TypeScript via ONNX Runtime.",
+          "key_capabilities": "ONNX Runtime · Node.js · TypeScript"
+        },
+        {
+          "name": "laya-php",
+          "repo": "marcreichel/laya-php",
+          "url": "https://github.com/marcreichel/laya-php",
+          "stars": 88,
+          "language": "PHP",
+          "license": "Apache-2.0",
+          "role": "SDK · PHP",
+          "what": "Classify text in PHP without an LLM bill — typed decisions in 100+ languages, self-hosted. Laravel-ready.",
+          "key_capabilities": "Laravel-ready · self-hosted"
+        },
+        {
+          "name": "lev",
+          "repo": "jlt-commons/lev",
+          "url": "https://github.com/jlt-commons/lev",
+          "stars": 28,
+          "language": "Clojure",
+          "license": "Apache-2.0",
+          "role": "Port · Clojure",
+          "what": "A Jolt (Clojure on the JVM) implementation of the Laya non-autoregressive decision engine.",
+          "key_capabilities": "Jolt · JVM"
+        },
+        {
+          "name": "Laya4j",
+          "repo": "githubMJ/Laya4j",
+          "url": "https://github.com/githubMJ/Laya4j",
+          "stars": 7,
+          "language": "Java",
+          "license": null,
+          "role": "SDK · Java",
+          "what": "Pure Java 17+ SDK that ports the Laya framework into a production-grade inference library, running fully on the Apache-2.0 checkpoints via ONNX Runtime and HuggingFace Hub.",
+          "key_capabilities": "Java 17+ · ONNX Runtime · HF Hub"
+        },
+        {
+          "name": "laya-go",
+          "repo": "neko233-com/laya-go",
+          "url": "https://github.com/neko233-com/laya-go",
+          "stars": 5,
+          "language": "Go",
+          "license": "MIT",
+          "role": "Port · Go",
+          "what": "Go server plus agent CLI/MCP replacing JEV with open horizontal System 1 decision models (non-autoregressive structured prediction).",
+          "key_capabilities": "Go server · MCP · CLI"
+        },
+        {
+          "name": "laya-Ascend",
+          "repo": "zzhdbw/laya-Ascend",
+          "url": "https://github.com/zzhdbw/laya-Ascend",
+          "stars": 110,
+          "language": "Python",
+          "license": "Apache-2.0",
+          "role": "Port · Ascend NPU",
+          "what": "Runs Laya checkpoints on Huawei Ascend NPUs.",
+          "key_capabilities": "Ascend NPU"
+        },
+        {
+          "name": "laya-vision",
+          "repo": "r33drichards/laya-vision",
+          "url": "https://github.com/r33drichards/laya-vision",
+          "stars": 83,
+          "language": "Python",
+          "license": "Apache-2.0",
+          "role": "Extension · Multimodal",
+          "what": "Image inputs for Laya — calibrated, non-generative typed decisions over images + text (SmolVLM-256M backbone).",
+          "key_capabilities": "Image+text · SmolVLM backbone"
+        }
+      ]
+    },
+    {
+      "layer_name": "Serving & Self-Hosting",
+      "icon": "🚀",
+      "description": "Stand up a local decision API — the 'Ollama for decision models' layer. Pull, serve, and call typed decisions behind a familiar HTTP interface.",
+      "items": [
+        {
+          "name": "ollaya",
+          "repo": "ollaya-dev/ollaya",
+          "url": "https://github.com/ollaya-dev/ollaya",
+          "stars": 1282,
+          "language": "Rust",
+          "license": "Apache-2.0",
+          "role": "Server · Ollama-style",
+          "what": "Run open decision models locally: pull and serve Laya, decider, NLI, and GLiClass behind a TypeSafe-compatible API. 'Ollama for decision models.'",
+          "key_capabilities": "pull & serve · TypeSafe-compatible API"
+        },
+        {
+          "name": "laya-server",
+          "repo": "1Panel-dev/laya-server",
+          "url": "https://github.com/1Panel-dev/laya-server",
+          "stars": 98,
+          "language": "Python",
+          "license": "Apache-2.0",
+          "role": "Server · Self-hosted + Web UI",
+          "what": "A self-hosted API and web interface for Laya's structured decision models, compatible with the TypeSafe Jev API format.",
+          "key_capabilities": "Web UI · Jev API format"
+        },
+        {
+          "name": "arbiter",
+          "repo": "0xBakeer/arbiter",
+          "url": "https://github.com/0xBakeer/arbiter",
+          "stars": 34,
+          "language": "HTML",
+          "license": "MIT",
+          "role": "Server · GPU",
+          "what": "Serve typed-decision (System 1) models — Laya or your own — on NVIDIA GPUs or Apple Silicon, with a Jev-compatible API and coding-agent integrations.",
+          "key_capabilities": "NVIDIA GPU · Apple Silicon"
+        }
+      ]
+    },
+    {
+      "layer_name": "Agent Integration",
+      "icon": "🤖",
+      "description": "Wire Laya into an agent as a fast, cheap judgment layer — MCP servers, frameworks, and platform bindings.",
+      "items": [
+        {
+          "name": "system-one-connector",
+          "repo": "itsmostafa/system-one-connector",
+          "url": "https://github.com/itsmostafa/system-one-connector",
+          "stars": 349,
+          "language": "Go",
+          "license": "MIT",
+          "role": "MCP Server",
+          "what": "System One MCP connector to evaluate anything fast and cheap — gives your AI agent direct access to Jev, D1, CLM, and Laya.",
+          "key_capabilities": "MCP · agent-native"
+        },
+        {
+          "name": "FluidUse",
+          "repo": "FluidInference/FluidUse",
+          "url": "https://github.com/FluidInference/FluidUse",
+          "stars": 305,
+          "language": "Swift",
+          "license": "Apache-2.0",
+          "role": "Framework · Computer Use",
+          "what": "Local computer use on Apple silicon: on-device typed decisions with Laya and form filling with CUA-S1-FORMS, driven through the macOS Accessibility API.",
+          "key_capabilities": "macOS Accessibility API · Apple silicon"
+        },
+        {
+          "name": "system1-agents",
+          "repo": "ThinkFlowLab/system1-agents",
+          "url": "https://github.com/ThinkFlowLab/system1-agents",
+          "stars": 131,
+          "language": "Python",
+          "license": "Apache-2.0",
+          "role": "Framework · Multi-domain",
+          "what": "System 1 decision models (Jev, Laya, Cua-S1) as the brain for agents: browser use, computer use, games, and robotics.",
+          "key_capabilities": "browser/computer use · robotics"
+        },
+        {
+          "name": "omp-laya-judge",
+          "repo": "F0Rextasy/omp-laya-judge",
+          "url": "https://github.com/F0Rextasy/omp-laya-judge",
+          "stars": 7,
+          "language": "HTML",
+          "license": "NOASSERTION",
+          "role": "MCP Server + Skill",
+          "what": "Local Laya System-1 judge MCP server and skill for oh-my-pi: typed decisions in milliseconds, zero LLM tokens.",
+          "key_capabilities": "oh-my-pi · zero tokens"
+        },
+        {
+          "name": "home-assistant-laya",
+          "repo": "allenporter/home-assistant-laya",
+          "url": "https://github.com/allenporter/home-assistant-laya",
+          "stars": 9,
+          "language": "Python",
+          "license": "Apache-2.0",
+          "role": "Binding · Home Assistant",
+          "what": "A Home Assistant conversation agent backed by Laya, the multilingual non-autoregressive System 1 decision model.",
+          "key_capabilities": "Home Assistant · conversation agent"
+        }
+      ]
+    },
+    {
+      "layer_name": "Applications & Demos",
+      "icon": "🎮",
+      "description": "Real products and runnable demos that show Laya replacing an LLM call for a specific job.",
+      "items": [
+        {
+          "name": "keel",
+          "repo": "codejunkie99/keel",
+          "url": "https://github.com/codejunkie99/keel",
+          "stars": 330,
+          "language": "Rust",
+          "license": "MIT",
+          "role": "App · macOS Coding Workspace",
+          "what": "A local-first macOS coding workspace that uses local Laya and optional Jev decision selection.",
+          "key_capabilities": "local-first · macOS"
+        },
+        {
+          "name": "laya-ultrafast",
+          "repo": "ipenywis/laya-ultrafast",
+          "url": "https://github.com/ipenywis/laya-ultrafast",
+          "stars": 252,
+          "language": "Python",
+          "license": "MIT",
+          "role": "App · Web Agent",
+          "what": "The ultrafast web-agent loop, rebuilt on Laya instead of a hosted model.",
+          "key_capabilities": "web agent · ultrafast"
+        },
+        {
+          "name": "WechatVibe",
+          "repo": "tswawa/WechatVibe",
+          "url": "https://github.com/tswawa/WechatVibe",
+          "stars": 248,
+          "language": "Python",
+          "license": "Apache-2.0",
+          "role": "App · Chat Analysis",
+          "what": "微信聊天分析工具：本地 Laya ＋ API 模型，提供意图识别、情绪感知、人物画像、群聊画像、好感度与 MBTI 推测。",
+          "key_capabilities": "意图识别 · 情绪感知 · 人物画像"
+        },
+        {
+          "name": "laya-playground",
+          "repo": "wdobry/laya-playground",
+          "url": "https://github.com/wdobry/laya-playground",
+          "stars": 185,
+          "language": "JavaScript",
+          "license": "MIT",
+          "role": "Playground · Benchmark + Skill",
+          "what": "A website, two games, a benchmark, and an agent skill for Laya — all running on your machine.",
+          "key_capabilities": "live playground · benchmark · skill"
+        },
+        {
+          "name": "laya-vs-jev",
+          "repo": "virajbhartiya/laya-vs-jev",
+          "url": "https://github.com/virajbhartiya/laya-vs-jev",
+          "stars": 111,
+          "language": "Python",
+          "license": "Apache-2.0",
+          "role": "Demo · Head-to-head",
+          "what": "Laya vs Jev: local MLX and hosted AI decisions playing T-Rex side by side, with live metrics and replay recording.",
+          "key_capabilities": "side-by-side · live metrics"
+        }
+      ]
+    },
+    {
+      "layer_name": "Routing, Eval & Related Models",
+      "icon": "🔀",
+      "description": "The judgment layer around the model — intent contracts, routers, evals, and the sibling decision engines that share Laya's API.",
+      "items": [
+        {
+          "name": "Intent-Router",
+          "repo": "angel291592/Intent-Router",
+          "url": "https://github.com/angel291592/Intent-Router",
+          "stars": 1068,
+          "language": "Python",
+          "license": "MIT",
+          "role": "Router · Input Layer",
+          "what": "Intent compiler for AI agents — converges vague requests into typed IntentSpec contracts (probe, ask, or halt before routing). The input layer for routers and typed-decision models like Jev and Laya.",
+          "key_capabilities": "IntentSpec contracts · probe/ask/halt"
+        },
+        {
+          "name": "laya_router",
+          "repo": "glukicov/laya_router",
+          "url": "https://github.com/glukicov/laya_router",
+          "stars": 13,
+          "language": "Python",
+          "license": "Apache-2.0",
+          "role": "Router · Model Selection",
+          "what": "Model routing as a System 1 job: a 421M local decision engine (Laya) vs a GPT-5-nano reasoning router — same accuracy, 35x faster, free.",
+          "key_capabilities": "421M router · 35x faster"
+        },
+        {
+          "name": "jevals",
+          "repo": "openlayer-ai/jevals",
+          "url": "https://github.com/openlayer-ai/jevals",
+          "stars": 103,
+          "language": "Python",
+          "license": "MIT",
+          "role": "Eval · Guardrails",
+          "what": "Agent evals and guardrails as Jev-shaped decisions: one request per trace, a fraction of a cent, fast enough for the agent loop. Runs locally with Kev or Laya.",
+          "key_capabilities": "agent evals · guardrails"
+        },
+        {
+          "name": "openJev-verdict-2.0",
+          "repo": "Heman10x-NGU/openJev-verdict-2.0",
+          "url": "https://github.com/Heman10x-NGU/openJev-verdict-2.0",
+          "stars": 295,
+          "language": "Python",
+          "license": "NOASSERTION",
+          "role": "Sibling Model · Verdict",
+          "what": "A calibrated 151M non-autoregressive decision engine benchmarked against TypeSafe Jev and Laya (77.10% acc, 0.0636 Brier, 0.0144 ECE).",
+          "key_capabilities": "151M · calibrated"
+        },
+        {
+          "name": "OpenJev",
+          "repo": "zhangcy122/OpenJev",
+          "url": "https://github.com/zhangcy122/OpenJev",
+          "stars": 40,
+          "language": "Python",
+          "license": "NOASSERTION",
+          "role": "Sibling Model · Open",
+          "what": "Self-evolving cognitive decision engine and TypeSafe Jev alternative — a System 2→1 decision flywheel with 100% option-order invariance and a typed probabilistic API for open LLMs, Laya, and commercial Jev.",
+          "key_capabilities": "System 2→1 flywheel · order-invariant"
+        }
+      ]
     }
-   ]
-  },
-  {
-   "layer_name": "Language Runtimes & Ports",
-   "icon": "⚙️",
-   "description": "Run Laya on your stack — no Python service required. Ports and native runtimes across 10 languages and accelerators.",
-   "items": [
+  ],
+  "verification_sources": [
     {
-     "name": "laya-mlx",
-     "repo": "mizorewww/laya-mlx",
-     "url": "https://github.com/mizorewww/laya-mlx",
-     "stars": 6864,
-     "language": "Python",
-     "license": "Apache-2.0",
-     "role": "Runtime · Apple MLX",
-     "what": "Native MLX runtime. 7–14 ms short decisions on an M3 Max, with no text generation, no PyTorch, and no cloud API.",
-     "key_capabilities": "Apple MLX · 7–14 ms · fully local"
+      "name": "laya",
+      "url": "https://github.com/NandhaKishorM/laya",
+      "expected_token": "nandhakishorm/laya"
     },
     {
-     "name": "laya-coreml",
-     "repo": "mizorewww/laya-coreml",
-     "url": "https://github.com/mizorewww/laya-coreml",
-     "stars": 1571,
-     "language": "Python",
-     "license": "Apache-2.0",
-     "role": "Runtime · Apple Core ML",
-     "what": "Runs typed decisions on Core ML and the Neural Engine. ~5 ms short decisions on M3 Max, with reproducible speed and energy benchmarks.",
-     "key_capabilities": "Core ML · Neural Engine · ~5 ms"
+      "name": "laya-mlx",
+      "url": "https://github.com/mizorewww/laya-mlx",
+      "expected_token": "mizorewww/laya-mlx"
     },
     {
-     "name": "laya.cpp",
-     "repo": "lkarlslund/laya.cpp",
-     "url": "https://github.com/lkarlslund/laya.cpp",
-     "stars": 123,
-     "language": "C++",
-     "license": "MIT",
-     "role": "Runtime · C++",
-     "what": "C++ inference for Laya typed decisions, with CUDA, Vulkan, Core ML, and CPU backends.",
-     "key_capabilities": "CUDA · Vulkan · Core ML · CPU"
+      "name": "laya-coreml",
+      "url": "https://github.com/mizorewww/laya-coreml",
+      "expected_token": "mizorewww/laya-coreml"
     },
     {
-     "name": "laya",
-     "repo": "receptron/laya",
-     "url": "https://github.com/receptron/laya",
-     "stars": 880,
-     "language": "TypeScript",
-     "license": "MIT",
-     "role": "Runtime · TypeScript / Node.js",
-     "what": "Run the open-source Jev-compatible Laya model from Node.js and TypeScript via ONNX Runtime.",
-     "key_capabilities": "ONNX Runtime · Node.js · TypeScript"
+      "name": "laya.cpp",
+      "url": "https://github.com/lkarlslund/laya.cpp",
+      "expected_token": "lkarlslund/laya.cpp"
     },
     {
-     "name": "laya-php",
-     "repo": "marcreichel/laya-php",
-     "url": "https://github.com/marcreichel/laya-php",
-     "stars": 88,
-     "language": "PHP",
-     "license": "Apache-2.0",
-     "role": "SDK · PHP",
-     "what": "Classify text in PHP without an LLM bill — typed decisions in 100+ languages, self-hosted. Laravel-ready.",
-     "key_capabilities": "Laravel-ready · self-hosted"
+      "name": "laya",
+      "url": "https://github.com/receptron/laya",
+      "expected_token": "receptron/laya"
     },
     {
-     "name": "lev",
-     "repo": "jlt-commons/lev",
-     "url": "https://github.com/jlt-commons/lev",
-     "stars": 28,
-     "language": "Clojure",
-     "license": "Apache-2.0",
-     "role": "Port · Clojure",
-     "what": "A Jolt (Clojure on the JVM) implementation of the Laya non-autoregressive decision engine.",
-     "key_capabilities": "Jolt · JVM"
+      "name": "laya-php",
+      "url": "https://github.com/marcreichel/laya-php",
+      "expected_token": "marcreichel/laya-php"
     },
     {
-     "name": "Laya4j",
-     "repo": "githubMJ/Laya4j",
-     "url": "https://github.com/githubMJ/Laya4j",
-     "stars": 7,
-     "language": "Java",
-     "license": null,
-     "role": "SDK · Java",
-     "what": "Pure Java 17+ SDK that ports the Laya framework into a production-grade inference library, running fully on the Apache-2.0 checkpoints via ONNX Runtime and HuggingFace Hub.",
-     "key_capabilities": "Java 17+ · ONNX Runtime · HF Hub"
+      "name": "lev",
+      "url": "https://github.com/jlt-commons/lev",
+      "expected_token": "jlt-commons/lev"
     },
     {
-     "name": "laya-go",
-     "repo": "neko233-com/laya-go",
-     "url": "https://github.com/neko233-com/laya-go",
-     "stars": 5,
-     "language": "Go",
-     "license": "MIT",
-     "role": "Port · Go",
-     "what": "Go server plus agent CLI/MCP replacing JEV with open horizontal System 1 decision models (non-autoregressive structured prediction).",
-     "key_capabilities": "Go server · MCP · CLI"
+      "name": "Laya4j",
+      "url": "https://github.com/githubMJ/Laya4j",
+      "expected_token": "githubmj/laya4j"
     },
     {
-     "name": "laya-Ascend",
-     "repo": "zzhdbw/laya-Ascend",
-     "url": "https://github.com/zzhdbw/laya-Ascend",
-     "stars": 110,
-     "language": "Python",
-     "license": "Apache-2.0",
-     "role": "Port · Ascend NPU",
-     "what": "Runs Laya checkpoints on Huawei Ascend NPUs.",
-     "key_capabilities": "Ascend NPU"
+      "name": "laya-go",
+      "url": "https://github.com/neko233-com/laya-go",
+      "expected_token": "neko233-com/laya-go"
     },
     {
-     "name": "laya-vision",
-     "repo": "r33drichards/laya-vision",
-     "url": "https://github.com/r33drichards/laya-vision",
-     "stars": 83,
-     "language": "Python",
-     "license": "Apache-2.0",
-     "role": "Extension · Multimodal",
-     "what": "Image inputs for Laya — calibrated, non-generative typed decisions over images + text (SmolVLM-256M backbone).",
-     "key_capabilities": "Image+text · SmolVLM backbone"
+      "name": "laya-Ascend",
+      "url": "https://github.com/zzhdbw/laya-Ascend",
+      "expected_token": "zzhdbw/laya-ascend"
+    },
+    {
+      "name": "laya-vision",
+      "url": "https://github.com/r33drichards/laya-vision",
+      "expected_token": "r33drichards/laya-vision"
+    },
+    {
+      "name": "ollaya",
+      "url": "https://github.com/ollaya-dev/ollaya",
+      "expected_token": "ollaya-dev/ollaya"
+    },
+    {
+      "name": "laya-server",
+      "url": "https://github.com/1Panel-dev/laya-server",
+      "expected_token": "1panel-dev/laya-server"
+    },
+    {
+      "name": "arbiter",
+      "url": "https://github.com/0xBakeer/arbiter",
+      "expected_token": "0xbakeer/arbiter"
+    },
+    {
+      "name": "system-one-connector",
+      "url": "https://github.com/itsmostafa/system-one-connector",
+      "expected_token": "itsmostafa/system-one-connector"
+    },
+    {
+      "name": "FluidUse",
+      "url": "https://github.com/FluidInference/FluidUse",
+      "expected_token": "fluidinference/fluiduse"
+    },
+    {
+      "name": "system1-agents",
+      "url": "https://github.com/ThinkFlowLab/system1-agents",
+      "expected_token": "thinkflowlab/system1-agents"
+    },
+    {
+      "name": "omp-laya-judge",
+      "url": "https://github.com/F0Rextasy/omp-laya-judge",
+      "expected_token": "f0rextasy/omp-laya-judge"
+    },
+    {
+      "name": "home-assistant-laya",
+      "url": "https://github.com/allenporter/home-assistant-laya",
+      "expected_token": "allenporter/home-assistant-laya"
+    },
+    {
+      "name": "keel",
+      "url": "https://github.com/codejunkie99/keel",
+      "expected_token": "codejunkie99/keel"
+    },
+    {
+      "name": "laya-ultrafast",
+      "url": "https://github.com/ipenywis/laya-ultrafast",
+      "expected_token": "ipenywis/laya-ultrafast"
+    },
+    {
+      "name": "WechatVibe",
+      "url": "https://github.com/tswawa/WechatVibe",
+      "expected_token": "tswawa/wechatvibe"
+    },
+    {
+      "name": "laya-playground",
+      "url": "https://github.com/wdobry/laya-playground",
+      "expected_token": "wdobry/laya-playground"
+    },
+    {
+      "name": "laya-vs-jev",
+      "url": "https://github.com/virajbhartiya/laya-vs-jev",
+      "expected_token": "virajbhartiya/laya-vs-jev"
+    },
+    {
+      "name": "Intent-Router",
+      "url": "https://github.com/angel291592/Intent-Router",
+      "expected_token": "angel291592/intent-router"
+    },
+    {
+      "name": "laya_router",
+      "url": "https://github.com/glukicov/laya_router",
+      "expected_token": "glukicov/laya_router"
+    },
+    {
+      "name": "jevals",
+      "url": "https://github.com/openlayer-ai/jevals",
+      "expected_token": "openlayer-ai/jevals"
+    },
+    {
+      "name": "openJev-verdict-2.0",
+      "url": "https://github.com/Heman10x-NGU/openJev-verdict-2.0",
+      "expected_token": "heman10x-ngu/openjev-verdict-2.0"
+    },
+    {
+      "name": "OpenJev",
+      "url": "https://github.com/zhangcy122/OpenJev",
+      "expected_token": "zhangcy122/openjev"
     }
-   ]
-  },
-  {
-   "layer_name": "Serving & Self-Hosting",
-   "icon": "🚀",
-   "description": "Stand up a local decision API — the 'Ollama for decision models' layer. Pull, serve, and call typed decisions behind a familiar HTTP interface.",
-   "items": [
-    {
-     "name": "ollaya",
-     "repo": "ollaya-dev/ollaya",
-     "url": "https://github.com/ollaya-dev/ollaya",
-     "stars": 1282,
-     "language": "Rust",
-     "license": "Apache-2.0",
-     "role": "Server · Ollama-style",
-     "what": "Run open decision models locally: pull and serve Laya, decider, NLI, and GLiClass behind a TypeSafe-compatible API. 'Ollama for decision models.'",
-     "key_capabilities": "pull & serve · TypeSafe-compatible API"
-    },
-    {
-     "name": "laya-server",
-     "repo": "1Panel-dev/laya-server",
-     "url": "https://github.com/1Panel-dev/laya-server",
-     "stars": 98,
-     "language": "Python",
-     "license": "Apache-2.0",
-     "role": "Server · Self-hosted + Web UI",
-     "what": "A self-hosted API and web interface for Laya's structured decision models, compatible with the TypeSafe Jev API format.",
-     "key_capabilities": "Web UI · Jev API format"
-    },
-    {
-     "name": "arbiter",
-     "repo": "0xBakeer/arbiter",
-     "url": "https://github.com/0xBakeer/arbiter",
-     "stars": 34,
-     "language": "HTML",
-     "license": "MIT",
-     "role": "Server · GPU",
-     "what": "Serve typed-decision (System 1) models — Laya or your own — on NVIDIA GPUs or Apple Silicon, with a Jev-compatible API and coding-agent integrations.",
-     "key_capabilities": "NVIDIA GPU · Apple Silicon"
-    }
-   ]
-  },
-  {
-   "layer_name": "Agent Integration",
-   "icon": "🤖",
-   "description": "Wire Laya into an agent as a fast, cheap judgment layer — MCP servers, frameworks, and platform bindings.",
-   "items": [
-    {
-     "name": "system-one-connector",
-     "repo": "itsmostafa/system-one-connector",
-     "url": "https://github.com/itsmostafa/system-one-connector",
-     "stars": 349,
-     "language": "Go",
-     "license": "MIT",
-     "role": "MCP Server",
-     "what": "System One MCP connector to evaluate anything fast and cheap — gives your AI agent direct access to Jev, D1, CLM, and Laya.",
-     "key_capabilities": "MCP · agent-native"
-    },
-    {
-     "name": "FluidUse",
-     "repo": "FluidInference/FluidUse",
-     "url": "https://github.com/FluidInference/FluidUse",
-     "stars": 305,
-     "language": "Swift",
-     "license": "Apache-2.0",
-     "role": "Framework · Computer Use",
-     "what": "Local computer use on Apple silicon: on-device typed decisions with Laya and form filling with CUA-S1-FORMS, driven through the macOS Accessibility API.",
-     "key_capabilities": "macOS Accessibility API · Apple silicon"
-    },
-    {
-     "name": "system1-agents",
-     "repo": "ThinkFlowLab/system1-agents",
-     "url": "https://github.com/ThinkFlowLab/system1-agents",
-     "stars": 131,
-     "language": "Python",
-     "license": "Apache-2.0",
-     "role": "Framework · Multi-domain",
-     "what": "System 1 decision models (Jev, Laya, Cua-S1) as the brain for agents: browser use, computer use, games, and robotics.",
-     "key_capabilities": "browser/computer use · robotics"
-    },
-    {
-     "name": "omp-laya-judge",
-     "repo": "F0Rextasy/omp-laya-judge",
-     "url": "https://github.com/F0Rextasy/omp-laya-judge",
-     "stars": 7,
-     "language": "HTML",
-     "license": "NOASSERTION",
-     "role": "MCP Server + Skill",
-     "what": "Local Laya System-1 judge MCP server and skill for oh-my-pi: typed decisions in milliseconds, zero LLM tokens.",
-     "key_capabilities": "oh-my-pi · zero tokens"
-    },
-    {
-     "name": "home-assistant-laya",
-     "repo": "allenporter/home-assistant-laya",
-     "url": "https://github.com/allenporter/home-assistant-laya",
-     "stars": 9,
-     "language": "Python",
-     "license": "Apache-2.0",
-     "role": "Binding · Home Assistant",
-     "what": "A Home Assistant conversation agent backed by Laya, the multilingual non-autoregressive System 1 decision model.",
-     "key_capabilities": "Home Assistant · conversation agent"
-    }
-   ]
-  },
-  {
-   "layer_name": "Applications & Demos",
-   "icon": "🎮",
-   "description": "Real products and runnable demos that show Laya replacing an LLM call for a specific job.",
-   "items": [
-    {
-     "name": "keel",
-     "repo": "codejunkie99/keel",
-     "url": "https://github.com/codejunkie99/keel",
-     "stars": 330,
-     "language": "Rust",
-     "license": "MIT",
-     "role": "App · macOS Coding Workspace",
-     "what": "A local-first macOS coding workspace that uses local Laya and optional Jev decision selection.",
-     "key_capabilities": "local-first · macOS"
-    },
-    {
-     "name": "laya-ultrafast",
-     "repo": "ipenywis/laya-ultrafast",
-     "url": "https://github.com/ipenywis/laya-ultrafast",
-     "stars": 252,
-     "language": "Python",
-     "license": "MIT",
-     "role": "App · Web Agent",
-     "what": "The ultrafast web-agent loop, rebuilt on Laya instead of a hosted model.",
-     "key_capabilities": "web agent · ultrafast"
-    },
-    {
-     "name": "WechatVibe",
-     "repo": "tswawa/WechatVibe",
-     "url": "https://github.com/tswawa/WechatVibe",
-     "stars": 248,
-     "language": "Python",
-     "license": "Apache-2.0",
-     "role": "App · Chat Analysis",
-     "what": "微信聊天分析工具：本地 Laya ＋ API 模型，提供意图识别、情绪感知、人物画像、群聊画像、好感度与 MBTI 推测。",
-     "key_capabilities": "意图识别 · 情绪感知 · 人物画像"
-    },
-    {
-     "name": "laya-playground",
-     "repo": "wdobry/laya-playground",
-     "url": "https://github.com/wdobry/laya-playground",
-     "stars": 185,
-     "language": "JavaScript",
-     "license": "MIT",
-     "role": "Playground · Benchmark + Skill",
-     "what": "A website, two games, a benchmark, and an agent skill for Laya — all running on your machine.",
-     "key_capabilities": "live playground · benchmark · skill"
-    },
-    {
-     "name": "laya-vs-jev",
-     "repo": "virajbhartiya/laya-vs-jev",
-     "url": "https://github.com/virajbhartiya/laya-vs-jev",
-     "stars": 111,
-     "language": "Python",
-     "license": "Apache-2.0",
-     "role": "Demo · Head-to-head",
-     "what": "Laya vs Jev: local MLX and hosted AI decisions playing T-Rex side by side, with live metrics and replay recording.",
-     "key_capabilities": "side-by-side · live metrics"
-    }
-   ]
-  },
-  {
-   "layer_name": "Routing, Eval & Related Models",
-   "icon": "🔀",
-   "description": "The judgment layer around the model — intent contracts, routers, evals, and the sibling decision engines that share Laya's API.",
-   "items": [
-    {
-     "name": "Intent-Router",
-     "repo": "angel291592/Intent-Router",
-     "url": "https://github.com/angel291592/Intent-Router",
-     "stars": 1068,
-     "language": "Python",
-     "license": "MIT",
-     "role": "Router · Input Layer",
-     "what": "Intent compiler for AI agents — converges vague requests into typed IntentSpec contracts (probe, ask, or halt before routing). The input layer for routers and typed-decision models like Jev and Laya.",
-     "key_capabilities": "IntentSpec contracts · probe/ask/halt"
-    },
-    {
-     "name": "laya_router",
-     "repo": "glukicov/laya_router",
-     "url": "https://github.com/glukicov/laya_router",
-     "stars": 13,
-     "language": "Python",
-     "license": "Apache-2.0",
-     "role": "Router · Model Selection",
-     "what": "Model routing as a System 1 job: a 421M local decision engine (Laya) vs a GPT-5-nano reasoning router — same accuracy, 35x faster, free.",
-     "key_capabilities": "421M router · 35x faster"
-    },
-    {
-     "name": "jevals",
-     "repo": "openlayer-ai/jevals",
-     "url": "https://github.com/openlayer-ai/jevals",
-     "stars": 103,
-     "language": "Python",
-     "license": "MIT",
-     "role": "Eval · Guardrails",
-     "what": "Agent evals and guardrails as Jev-shaped decisions: one request per trace, a fraction of a cent, fast enough for the agent loop. Runs locally with Kev or Laya.",
-     "key_capabilities": "agent evals · guardrails"
-    },
-    {
-     "name": "openJev-verdict-2.0",
-     "repo": "Heman10x-NGU/openJev-verdict-2.0",
-     "url": "https://github.com/Heman10x-NGU/openJev-verdict-2.0",
-     "stars": 295,
-     "language": "Python",
-     "license": "NOASSERTION",
-     "role": "Sibling Model · Verdict",
-     "what": "A calibrated 151M non-autoregressive decision engine benchmarked against TypeSafe Jev and Laya (77.10% acc, 0.0636 Brier, 0.0144 ECE).",
-     "key_capabilities": "151M · calibrated"
-    },
-    {
-     "name": "OpenJev",
-     "repo": "zhangcy122/OpenJev",
-     "url": "https://github.com/zhangcy122/OpenJev",
-     "stars": 40,
-     "language": "Python",
-     "license": "NOASSERTION",
-     "role": "Sibling Model · Open",
-     "what": "Self-evolving cognitive decision engine and TypeSafe Jev alternative — a System 2→1 decision flywheel with 100% option-order invariance and a typed probabilistic API for open LLMs, Laya, and commercial Jev.",
-     "key_capabilities": "System 2→1 flywheel · order-invariant"
-    }
-   ]
-  }
- ],
- "verification_sources": [
-  {
-   "name": "laya",
-   "url": "https://github.com/NandhaKishorM/laya",
-   "expected_token": "nandhakishorm/laya"
-  },
-  {
-   "name": "laya-mlx",
-   "url": "https://github.com/mizorewww/laya-mlx",
-   "expected_token": "mizorewww/laya-mlx"
-  },
-  {
-   "name": "laya-coreml",
-   "url": "https://github.com/mizorewww/laya-coreml",
-   "expected_token": "mizorewww/laya-coreml"
-  },
-  {
-   "name": "laya.cpp",
-   "url": "https://github.com/lkarlslund/laya.cpp",
-   "expected_token": "lkarlslund/laya.cpp"
-  },
-  {
-   "name": "laya",
-   "url": "https://github.com/receptron/laya",
-   "expected_token": "receptron/laya"
-  },
-  {
-   "name": "laya-php",
-   "url": "https://github.com/marcreichel/laya-php",
-   "expected_token": "marcreichel/laya-php"
-  },
-  {
-   "name": "lev",
-   "url": "https://github.com/jlt-commons/lev",
-   "expected_token": "jlt-commons/lev"
-  },
-  {
-   "name": "Laya4j",
-   "url": "https://github.com/githubMJ/Laya4j",
-   "expected_token": "githubmj/laya4j"
-  },
-  {
-   "name": "laya-go",
-   "url": "https://github.com/neko233-com/laya-go",
-   "expected_token": "neko233-com/laya-go"
-  },
-  {
-   "name": "laya-Ascend",
-   "url": "https://github.com/zzhdbw/laya-Ascend",
-   "expected_token": "zzhdbw/laya-ascend"
-  },
-  {
-   "name": "laya-vision",
-   "url": "https://github.com/r33drichards/laya-vision",
-   "expected_token": "r33drichards/laya-vision"
-  },
-  {
-   "name": "ollaya",
-   "url": "https://github.com/ollaya-dev/ollaya",
-   "expected_token": "ollaya-dev/ollaya"
-  },
-  {
-   "name": "laya-server",
-   "url": "https://github.com/1Panel-dev/laya-server",
-   "expected_token": "1panel-dev/laya-server"
-  },
-  {
-   "name": "arbiter",
-   "url": "https://github.com/0xBakeer/arbiter",
-   "expected_token": "0xbakeer/arbiter"
-  },
-  {
-   "name": "system-one-connector",
-   "url": "https://github.com/itsmostafa/system-one-connector",
-   "expected_token": "itsmostafa/system-one-connector"
-  },
-  {
-   "name": "FluidUse",
-   "url": "https://github.com/FluidInference/FluidUse",
-   "expected_token": "fluidinference/fluiduse"
-  },
-  {
-   "name": "system1-agents",
-   "url": "https://github.com/ThinkFlowLab/system1-agents",
-   "expected_token": "thinkflowlab/system1-agents"
-  },
-  {
-   "name": "omp-laya-judge",
-   "url": "https://github.com/F0Rextasy/omp-laya-judge",
-   "expected_token": "f0rextasy/omp-laya-judge"
-  },
-  {
-   "name": "home-assistant-laya",
-   "url": "https://github.com/allenporter/home-assistant-laya",
-   "expected_token": "allenporter/home-assistant-laya"
-  },
-  {
-   "name": "keel",
-   "url": "https://github.com/codejunkie99/keel",
-   "expected_token": "codejunkie99/keel"
-  },
-  {
-   "name": "laya-ultrafast",
-   "url": "https://github.com/ipenywis/laya-ultrafast",
-   "expected_token": "ipenywis/laya-ultrafast"
-  },
-  {
-   "name": "WechatVibe",
-   "url": "https://github.com/tswawa/WechatVibe",
-   "expected_token": "tswawa/wechatvibe"
-  },
-  {
-   "name": "laya-playground",
-   "url": "https://github.com/wdobry/laya-playground",
-   "expected_token": "wdobry/laya-playground"
-  },
-  {
-   "name": "laya-vs-jev",
-   "url": "https://github.com/virajbhartiya/laya-vs-jev",
-   "expected_token": "virajbhartiya/laya-vs-jev"
-  },
-  {
-   "name": "Intent-Router",
-   "url": "https://github.com/angel291592/Intent-Router",
-   "expected_token": "angel291592/intent-router"
-  },
-  {
-   "name": "laya_router",
-   "url": "https://github.com/glukicov/laya_router",
-   "expected_token": "glukicov/laya_router"
-  },
-  {
-   "name": "jevals",
-   "url": "https://github.com/openlayer-ai/jevals",
-   "expected_token": "openlayer-ai/jevals"
-  },
-  {
-   "name": "openJev-verdict-2.0",
-   "url": "https://github.com/Heman10x-NGU/openJev-verdict-2.0",
-   "expected_token": "heman10x-ngu/openjev-verdict-2.0"
-  },
-  {
-   "name": "OpenJev",
-   "url": "https://github.com/zhangcy122/OpenJev",
-   "expected_token": "zhangcy122/openjev"
-  }
- ]
+  ]
 }
